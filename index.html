@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Автоінструктор</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-wrapper">
+        <img class="logo" src="./img/logo.svg" alt="logo" />
+       
+      </div>
+    </header>
+    <main>
+      <div class="main-top">
+        <div class="main-top-wrapper container">
+          <div class="h1-wrapper">
+            <h1>ПРИВАТНІ УРОКИ<br />ВОДІННЯ У ТВОЄМУ МІСТІ</h1>
+            <img src="./img/map.png" alt="" />
+          </div>
+
+          <div class="cities-container">
+            <a class="btn-transp" href="#">Київ</a>
+            <a class="btn-transp" href="#">Біла Церква</a>
+            <a class="btn-transp" href="#">Гатне</a>
+          </div>
+
+          <div class="pros">
+            <ul class="pros-list">
+              <li>
+                <img class="dot" src="./img/dot.svg" alt="dot" />Навчаємо З НУЛЯ
+              </li>
+              <li>
+                <img id="form" class="dot" src="./img/dot.svg" alt="dot" />якщо є права,
+                але немає досвіду
+              </li>
+              <li>
+                <img class="dot" src="./img/dot.svg" alt="dot" />якщо просто
+                страшно
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-form form-wrapper" >
+        <form action="#" id="form" class="form-body">
+          <h2>ЗАПИШІТЬСЯ НА ЗАНЯТТЯ</h2>
+          <h3>Залиште контактні дані і ми зв’яжимося з вами протягом години</h3>
+          <div class="inputs-container">
+            <div class="form-item">
+              <div class="form-input-wrapper">
+                <img src="./img/Rectangle.svg" alt="rectangle" />
+                <img src="./img/Icon_name.svg" alt="i" class="input-icon" />
+                <input
+                  placeholder="Ім'я"
+                  id="name-field"
+                  type="text"
+                  name="name"
+                  class="form-input _req _name"
+                />
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="form-input-wrapper">
+                <img src="./img/Icon-phone.svg" alt="i" class="input-icon" />
+                <img src="./img/Rectangle.svg" alt="rectangle" />
+                <input
+                  placeholder="Телефон"
+                  id="phone-field"
+                  data-tel-input
+                  type="tel"
+                  name="phone"
+                  class="form-input _req"
+                />
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="form-input-wrapper">
+                <img src="./img/Icon-city.svg" alt="i" class="input-icon" />
+                <img src="./img/Rectangle.svg" alt="rectangle" />
+                <input
+                  placeholder="Місто"
+                  id="city-field"
+                  type="text"
+                  name="city"
+                  class="form-input _req"
+                />
+              </div>
+            </div>
+            <div class="button-container">
+              <button type="submit" class="form-button" >ЗАПИСАТИСЬ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="section-about container">
+        <h2 id="about">ПРО НАС</h2>
+        <p>
+          Привіт, мене звати Тіна. Я професійний автоінструктор з 20-річним
+          стажем водіння.
+        </p>
+        <p>
+          Проводжу індивідуальні практичні заняття. Якщо ви плануєте звернутись
+          до приватного інструктора, це означає що вам бракує практичного
+          досвіду. І це проблема всіх новачків, у будь-якій справі, не лише у
+          керуванні автомобілем. Мабуть, ви відчуваєте тривогу через недостатній
+          досвід водіння та від незнання, як же керувати цією машиною. 
+        </p>
+        <p>
+            Отже,
+          якщо ваша ціль: 
+          <ul>
+            <li>навчитись їздити з нуля</li>
+            <li>відновити навички</li>
+            <li> подолати
+          страх водіння</li>
+            <li>впевнено рухатись в потоці</li>
+            <li>навчитись паркуватись</li>
+            <li>не
+          оминати складні розв’язки </li>
+          </ul>
+        </p>
+        <p>Тоді ви вже на правильному шляху. Щоб
+          навчитися керувати машиною, необхідно регулярно їздити. Сісти в
+          машину, завести її, проїхати до магазину та припаркуватися. Потім
+          повернутись додому - це вже ціла подорож! Для новачків це важливо! Це
+          особистий досвід!</p>
+      </div>
+      <div class="section-plans container">
+        <h2 id="plans">ТАРИФИ</h2>
+        <div class="swiper slider">
+                <div class="swiper-wrapper plans-carousel">
+                     <div class="swiper-slide carousel-item" >
+                            <span class="item-title">
+                                На вашому авто
+                            </span>
+                        <div class="carousel-item-bottom">
+                            <div class="plan-price">
+                                <div class="price">
+                                    <span>900 грн</span>
+                                </div>
+                                <img src="./img/price-line.svg" alt="line">
+                                <span class="lessons">Заняття</span>
+                            </div>
+                            <div class="plan-price">
+                                <div class="price">
+                                    <span>3990 грн</span>
+                                </div>
+                                <img src="./img/price-line.svg" alt="line">
+                                <span class="lessons">5 занять</span>
+                            </div>
+                            <span>
+                                заняття триває 2 години
+                            </span>
+                            <a href="#form">
+                                ЗАПИСАТИСЬ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide carousel-item">
+                            <span class="item-title">
+                                На учбовому авто
+                            </span>
+                        <div class="carousel-item-bottom">
+                            <div class="plan-price">
+                                <div class="price">
+                                    <span>1300 грн</span>
+                                </div>
+                                <img src="./img/price-line.svg" alt="line">
+                                <span class="lessons">Заняття</span>
+                            </div>
+                            <div class="plan-price">
+                                <div class="price">
+                                    <span>5490 грн</span>
+                                </div>
+                                <img src="./img/price-line.svg" alt="line">
+                                <span class="lessons">5 занять</span>
+                            </div>
+                            <span>
+                                заняття триває 2 години
+                            </span>
+                            <a href="#form">
+                                ЗАПИСАТИСЬ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="slider-controllers">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="why-we container">
+        <h2>
+            Чому ми?
+        </h2>
+            <div class="benefits-container-wrapper">
+                    <img src="./img/Line.svg" alt="line" class="crossline">
+                    <img src="./img/Line-mobile.svg" alt="line" class="crossline-mobile">
+                <div class="benefits-container">
+                    <div class="col1">
+                        <img src="./img/Ellipse.png" alt="ellipse" class="round-img">
+                        <span class="num">01</span>
+                        <span class="description">Автоінструктор-<br>психолог</span>
+                    </div>
+                    <div class="col2">
+                        <img src="./img/Ellipse.png" alt="ellipse" class="round-img">
+                        <span class="num">02</span>
+                        <span class="description">20 років <br>досвіду</span>
+                    </div>
+                    <div class="col3">
+                        <img src="./img/Ellipse.png" alt="ellipse" class="round-img">
+                        <span class="num">03</span>
+                        <span class="description">10 % на <br>благодійність</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews container">
+        <h2>
+            Відгуки
+        </h2>
+        <div class="swiper slider2">
+                <div class="swiper-wrapper reviews-carousel" id="reviews">
+                    <div class="swiper-slide reviews-item">
+                        <div class="reviews-item-top">
+                            <span class="review-name">
+                                Марія
+                            </span>
+                            <img src="./img/quotes.svg" alt="quotes">
+                        </div>
+                        <div class="reviews-item-bottom">
+                            <p>
+                                Дякую, що пояснили мені як поводитись на частково зайнятій припаркованими машинами смузі та як не виїхати на зустрічну смугу.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews-item">
+                        <div class="reviews-item-top">
+                            <span class="review-name">
+                                Олег
+                            </span>
+                            <img src="./img/quotes.svg" alt="quotes">
+                        </div>
+                        <div class="reviews-item-bottom">
+                            <p>
+                                Дякую, що пояснили мені як поводитись на частково зайнятій припаркованими машинами смузі та як не виїхати на зустрічну смугу.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews-item">
+                        <div class="reviews-item-top">
+                            <span class="review-name">
+                                Вероніка
+                            </span>
+                            <img src="./img/quotes.svg" alt="quotes">
+                        </div>
+                        <div class="reviews-item-bottom">
+                            <p>
+                                Сьогодні перший день, як я сама поїхала на роботу. Ваші поради безцінні, і до місця призначення я доїхала не в стресі, а з позитивом.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews-item">
+                        <div class="reviews-item-top">
+                            <span class="review-name">
+                                Єлизавета
+                            </span>
+                            <img src="./img/quotes.svg" alt="quotes">
+                        </div>
+                        <div class="reviews-item-bottom">
+                            <p>
+                                Никогда не думала, что водить машину не сложно, а главное - доставляет удовольствие. Кстати, ещё ни разу не ошиблась на Оболонских кругах!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide reviews-item">
+                        <div class="reviews-item-top">
+                            <span class="review-name">
+                                Олена
+                            </span>
+                            <img src="./img/quotes.svg" alt="quotes">
+                        </div>
+                        <div class="reviews-item-bottom">
+                            <p>
+                                Мне понравились занятия и ваша квалифицированная помощь. За одно занятие вы вернули мне уверенность, которую я потеряла десять лет назад.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slider-controllers-2">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer container">
+            <span>
+            ІНФОРМАЦІЯ
+            </span>
+                <div class="footer-content">
+                    <ul class="footer-links-container">
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#plans">Тарифи</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li>Телефон: <a id="tel" href="tel:+380935467007">+38 (093) - 546 - 70 - 07</a></li>
+                </ul>
+                <a target="_blank" href="https://instagram.com/auto_instructor_tina?igshid=YmMyMTA2M2Y="><img id="inst-logo" src="./img/inst_logo.svg" alt="instagram"></a>
+                </div>
+        </div>
+    </footer>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./checkPhone.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>

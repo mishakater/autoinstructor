@@ -1,0 +1,779 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.form-input._error {
+  border: 1px solid red;
+}
+
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+header {
+  background: #fea002;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-top {
+  background: no-repeat url("./img/background-top.png");
+  background-size: cover;
+  padding: 120px 0;
+}
+
+h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.h1-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.cities-container {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-transp {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(254, 160, 2, 0.45);
+  border-radius: 11px;
+  padding: 4px 15px;
+}
+
+.pros-list {
+  list-style: none;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pros-list li {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dot {
+  margin-right: 5px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-input {
+  padding-left: 55px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 0px 8px 8px 0px;
+  padding: 15px 15px 15px 60px;
+  width: 80%;
+  border: 1px solid rgb(221, 221, 221);
+  border-left: none;
+}
+
+.main-form {
+  background: rgba(226, 153, 67, 0.13);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 30px 40px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.main-form h2 {
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.main-form h3 {
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.form-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 65px;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input {
+  font-size: 17px;
+}
+
+.form-button {
+  cursor: pointer;
+  background: #fea002;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  padding: 15px 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.form-button:hover {
+  background: #ffb73b;
+}
+
+.button-container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.section-about h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.section-about > p,
+ul {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 180%;
+}
+
+.section-about ul {
+  margin-left: 10%;
+}
+
+.section-plans {
+  margin-top: 45px;
+}
+
+.section-plans h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.plans-carousel .carousel-item {
+  position: relative;
+  border-radius: 11px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  width: 30%;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  z-index: -1;
+  background: #fea002;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+.carousel-item-bottom {
+  width: 100%;
+}
+
+.item-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.price span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.price {
+  width: 95px;
+  background: #fea002;
+  border-radius: 26px;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.lessons {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.plan-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item-bottom {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background: rgba(226, 153, 67, 0.13);
+}
+
+.carousel-item-bottom > span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #423939;
+}
+
+.carousel-item-bottom a {
+  cursor: pointer;
+  background: #fea002;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  padding: 15px 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #ffffff;
+  width: 60%;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.carousel-item-bottom a:hover {
+  background: #ffb73b;
+}
+
+.plans-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.why-we h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.slider-controllers {
+  margin-top: 60px;
+}
+
+.swiper-button-next:after {
+  margin-left: 19px;
+  margin-bottom: -450px;
+  display: none;
+}
+.swiper-button-prev:after {
+  display: none;
+  margin-right: 19px;
+  margin-bottom: -450px;
+}
+
+.benefits-container .col1 .num,
+.col2 .num,
+.col3 .num {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 130%;
+  color: #000000;
+}
+.benefits-container .col1 .description,
+.col2 .description,
+.col3 .description {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 80px;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: 80px;
+}
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 62px;
+}
+.benefits-container-wrapper {
+  position: relative;
+}
+
+.round-img {
+  width: 55px;
+  height: 55px;
+  z-index: 2;
+}
+
+.crossline {
+  position: absolute;
+  top: 23px;
+  z-index: 1;
+  margin-left: 10%;
+}
+
+.reviews {
+  margin-top: 62px;
+}
+.reviews h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #000000;
+}
+.crossline-mobile {
+  display: none;
+}
+
+.footer-links-container {
+  list-style: none;
+}
+.footer-links-container li a {
+  text-decoration: none;
+  color: #35260c;
+}
+#tel {
+  text-decoration: underline;
+}
+#inst-logo {
+  width: 50px;
+}
+footer span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+}
+footer {
+  background: linear-gradient(
+    51.79deg,
+    rgba(254, 160, 2, 0.29) 53.5%,
+    rgba(254, 160, 2, 0) 114.53%
+  );
+}
+.footer {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.footer-content {
+  margin-top: 30px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviews-item {
+  padding: 20px 60px;
+  background: rgba(254, 160, 2, 0.72);
+  border-radius: 12px;
+  max-width: 200px;
+  min-height: 258px;
+}
+.reviews-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews-item-top span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 180%;
+  color: #35260c;
+}
+.reviews-item-bottom p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 180%;
+  color: #35260c;
+  margin-top: 30px;
+}
+
+.reviews h2 {
+  margin-bottom: 30px;
+}
+.slider2 {
+  margin-bottom: 60px;
+}
+
+.slider-controllers-2 {
+  margin-top: 50px;
+}
+
+.logo {
+  width: 150px;
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 90px;
+  }
+  .plans-carousel {
+    box-sizing: border-box;
+    display: block;
+  }
+  .carousel-item-top {
+    padding: 20px 30px;
+  }
+
+  .container {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 10px 12px;
+    background: #fea002;
+  }
+
+  .main-top {
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  .pros-list li {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+
+  .form-wrapper {
+    width: 75%;
+  }
+
+  .input-icon {
+    left: 30px;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .carousel-item {
+    box-sizing: border-box;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    min-width: 330px;
+  }
+
+  .plans-carousel {
+    gap: 0;
+    margin-left: 53%;
+  }
+  .swiper-button-next:after {
+    display: block;
+  }
+  .swiper-button-prev:after {
+    display: block;
+  }
+  .benefits-container {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .crossline {
+    display: none;
+  }
+  .crossline-mobile {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 23px;
+    z-index: 1;
+  }
+
+  .col1 {
+    margin-left: 0;
+  }
+  .col3 {
+    margin-right: 0;
+  }
+  .col1,
+  .col2,
+  .col3 {
+    flex-direction: row;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+  }
+}
